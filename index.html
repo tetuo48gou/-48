@@ -3,179 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>深夜考察室｜眠れない人のための変なウェブサイト</title>
+  <title>哲学5chまとめ速報｜考えすぎる人のアフィリエイトサイト</title>
+  <meta name="description" content="哲学・人生論・AI・読書・都市伝説系の5chスレを読みやすく紹介するアフィリエイトサイトのテンプレートです。" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo">深夜考察室</div>
-      <a href="#diagnosis">診断</a>
-      <a href="#stories">怪談</a>
-      <a href="#lab">実験室</a>
-      <a href="#note">note化</a>
+  <header class="topbar">
+    <div class="logo">哲学5chまとめ速報</div>
+    <nav>
+      <a href="#threads">スレまとめ</a>
+      <a href="#ranking">人気記事</a>
+      <a href="#affiliate">おすすめ本</a>
+      <a href="#rules">掲載ルール</a>
     </nav>
-
-    <section class="hero-inner">
-      <p class="kicker">AM 2:13 / 都市伝説・AI・心理・変な夢</p>
-      <h1>眠れない夜にだけ開く、<br>ちょっと危ない思考の遊園地。</h1>
-      <p class="lead">
-        ここは、怖い話、心理テスト、AI時代の妄想、note記事のネタを混ぜた
-        「読んで終わりじゃない」実験型ウェブサイトです。
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href="#diagnosis">今夜の診断をする</a>
-        <a class="button ghost" href="#stories">怪談を読む</a>
-      </div>
-    </section>
-
-    <div class="floating-card card-a">
-      <span>今日の異変</span>
-      <strong id="strangeWord">部屋の隅が少し明るい</strong>
-    </div>
-    <div class="floating-card card-b">
-      <span>読者の状態</span>
-      <strong>考えすぎ 87%</strong>
-    </div>
   </header>
 
-  <main>
-    <section class="section intro">
-      <h2>このサイトでできること</h2>
-      <div class="grid three">
-        <article class="panel">
-          <h3>1. 変な心理診断</h3>
-          <p>3つの質問に答えると、あなたの「今夜の思考タイプ」が出ます。</p>
-        </article>
-        <article class="panel">
-          <h3>2. ショート怪談</h3>
-          <p>1分で読める怪談をカード形式で配置。動画やnoteの原稿にも使えます。</p>
-        </article>
-        <article class="panel">
-          <h3>3. ネタ製造機</h3>
-          <p>ボタンを押すだけで、タイトル、導入、オチの方向性が出ます。</p>
-        </article>
+  <main class="layout">
+    <section class="hero">
+      <div>
+        <p class="label">5ch THREAD × PHILOSOPHY × AFFILIATE</p>
+        <h1>考えすぎる人のための<br>5ch哲学まとめ。</h1>
+        <p class="lead">人生、孤独、努力、AI、読書、宇宙、都市伝説。ネットの雑談を、読みやすい記事と商品導線に変えるアフィリエイトサイトです。</p>
+        <a class="button" href="#threads">サンプル記事を見る</a>
       </div>
+      <aside class="hotbox">
+        <h2>今日の伸びそうなテーマ</h2>
+        <ul id="trendList"></ul>
+      </aside>
     </section>
 
-    <section id="diagnosis" class="section diagnosis">
-      <div class="section-title">
-        <p class="kicker">Interactive</p>
-        <h2>今夜のあなたは何タイプ？</h2>
+    <section id="threads" class="content">
+      <div class="main-column">
+        <h2 class="section-title">最新スレまとめ</h2>
+
+        <article class="post-card">
+          <div class="meta">哲学 / 人生論 / 5chまとめ</div>
+          <h3>【議論】努力って才能がある人だけが信じられる宗教じゃね？</h3>
+          <p class="summary">努力論をめぐるスレを、肯定派・否定派・現実派に分けて整理。最後に関連本と勉強道具へ自然に誘導します。</p>
+          <div class="thread-box">
+            <p><strong>1：</strong>努力すれば報われるって言うけど、報われた人だけが言ってる気がする。</p>
+            <p><strong>12：</strong>才能ゼロでも継続できるなら、それも才能では？</p>
+            <p><strong>31：</strong>努力より環境のほうがデカい。でも環境を変えるのも努力。</p>
+          </div>
+          <a class="readmore" href="#">続きを読む</a>
+        </article>
+
+        <article class="post-card">
+          <div class="meta">AI / 未来 / 働き方</div>
+          <h3>【悲報】AIに仕事を奪われる前に、言い訳を奪われる</h3>
+          <p class="summary">AI時代に何を勉強するべきか。スレの反応をまとめつつ、AI本・キーボード・学習サービスへつなげる構成。</p>
+          <div class="thread-box">
+            <p><strong>5：</strong>AIで何でもできるなら、できない理由がなくなるのが一番怖い。</p>
+            <p><strong>18：</strong>結局、使う側と使われる側に分かれるだけ。</p>
+            <p><strong>44：</strong>勉強しない理由をAIのせいにする時代が来る。</p>
+          </div>
+          <a class="readmore" href="#">続きを読む</a>
+        </article>
+
+        <article class="post-card">
+          <div class="meta">読書 / 孤独 / 夜</div>
+          <h3>【深夜】本を読む人間だけが最後に救われる説</h3>
+          <p class="summary">孤独と読書をテーマにしたスレ風まとめ。関連書籍、読書灯、電子書籍リーダーへの導線を作りやすい記事です。</p>
+          <div class="thread-box">
+            <p><strong>2：</strong>スマホ見てると疲れるのに、本だと回復するの何なんだろうな。</p>
+            <p><strong>27：</strong>読書は孤独を消すんじゃなくて、孤独を使える形にする。</p>
+            <p><strong>60：</strong>夜中の読書だけは、人生にまだ余白がある感じがする。</p>
+          </div>
+          <a class="readmore" href="#">続きを読む</a>
+        </article>
       </div>
 
-      <div class="quiz">
-        <div class="question">
-          <p>Q1. 夜中に小さな音がしました。まず何を考える？</p>
-          <button data-score="1">家鳴りだろう</button>
-          <button data-score="2">誰かいるかもしれない</button>
-          <button data-score="3">これは物語の始まりだ</button>
-        </div>
-        <div class="question">
-          <p>Q2. 夢で同じ駅に何度も戻ります。どうする？</p>
-          <button data-score="2">駅員を探す</button>
-          <button data-score="1">スマホで調べる</button>
-          <button data-score="3">あえて終電に乗る</button>
-        </div>
-        <div class="question">
-          <p>Q3. AIが「あなたの未来を少し見た」と言ったら？</p>
-          <button data-score="1">無視する</button>
-          <button data-score="2">理由を聞く</button>
-          <button data-score="3">記事にする</button>
-        </div>
-        <div class="result" id="quizResult">
-          <h3>まだ診断されていません</h3>
-          <p>各質問からひとつずつ選ぶと、結果がここに出ます。</p>
-        </div>
-      </div>
+      <aside class="sidebar">
+        <section id="ranking" class="side-section">
+          <h2>人気記事</h2>
+          <ol>
+            <li>ニーチェを読んだだけで強くなった気がする問題</li>
+            <li>勉強できない人ほど勉強法を探す理由</li>
+            <li>AI時代に普通の人はどう生きるか</li>
+            <li>孤独は病気か、才能の副作用か</li>
+          </ol>
+        </section>
+
+        <section id="affiliate" class="side-section adbox">
+          <h2>おすすめ商品枠</h2>
+          <p>ここにAmazonアソシエイト、楽天アフィリエイト、電子書籍、学習サービスなどのリンクを入れます。</p>
+          <a class="ad-button" href="#">アフィリエイトリンクを設置</a>
+        </section>
+
+        <section class="side-section">
+          <h2>カテゴリ</h2>
+          <div class="tags">
+            <span>哲学</span><span>AI</span><span>読書</span><span>勉強</span><span>都市伝説</span><span>孤独</span>
+          </div>
+        </section>
+      </aside>
     </section>
 
-    <section id="stories" class="section stories">
-      <div class="section-title">
-        <p class="kicker">Short Horror</p>
-        <h2>1分で読める、嫌な余韻の怪談</h2>
-      </div>
-
-      <div class="grid two">
-        <article class="story-card">
-          <span class="tag">怪談 01</span>
-          <h3>四回の「あ」</h3>
-          <p>
-            最初の「あ」は隣の部屋だと思った。二回目で、部屋の中だと分かった。
-            三回目で、女の声だと分かった。四回目で、それが自分の布団の中から聞こえた。
-          </p>
-        </article>
-        <article class="story-card">
-          <span class="tag">怪談 02</span>
-          <h3>内見</h3>
-          <p>
-            不動産屋は「日当たりは悪くないです」と言った。
-            たしかに窓は明るかった。だが、部屋の中央に立つと、足元だけが夜だった。
-          </p>
-        </article>
-        <article class="story-card">
-          <span class="tag">怪談 03</span>
-          <h3>清掃員</h3>
-          <p>
-            副社長は清掃員を怒鳴った。女は黙って床を磨いた。
-            その夜、社長室の監視カメラには、誰もいない床を磨く副社長が映っていた。
-          </p>
-        </article>
-        <article class="story-card">
-          <span class="tag">怪談 04</span>
-          <h3>通知</h3>
-          <p>
-            深夜二時、スマホに通知が来た。「あなたの記事が購入されました」。
-            喜んで開くと、購入者名は十年前に死んだ祖父だった。
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="lab" class="section lab">
-      <div class="section-title">
-        <p class="kicker">Idea Generator</p>
-        <h2>ショート動画・note用 ネタ製造機</h2>
-      </div>
-
-      <div class="generator">
-        <button class="button primary" id="ideaButton">ネタを生成する</button>
-        <div class="idea-box">
-          <p class="label">タイトル</p>
-          <h3 id="ideaTitle">ボタンを押すとタイトルが出ます</h3>
-          <p class="label">導入</p>
-          <p id="ideaLead">ここに導入文が出ます。</p>
-          <p class="label">オチ</p>
-          <p id="ideaTwist">ここにオチの方向性が出ます。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="note" class="section note">
-      <div class="note-inner">
-        <p class="kicker">For note / TikTok / YouTube Shorts</p>
-        <h2>このサイト自体をコンテンツにできます。</h2>
-        <p>
-          「自分の怪談をウェブサイトにした」「AIに変なサイトを作らせた」
-          という切り口で、note記事・ショート動画・Threads投稿に展開できます。
-        </p>
-        <div class="copy-box">
-          <strong>投稿文例：</strong>
-          <p>
-            眠れない夜にだけ開く、都市伝説と心理診断のサイトを作りました。
-            怖い話、AI妄想、noteネタ製造機まで入っています。
-            こういう“変な場所”をネット上に増やしていきたい。
-          </p>
-        </div>
-      </div>
+    <section id="rules" class="rules">
+      <h2>5chスレ掲載の注意</h2>
+      <p>実際に5ちゃんねるのレスを載せる場合は、各板・スレッド・引用元のルール、転載可否、引用範囲、出典表記を確認してください。丸ごと転載ではなく、短い引用＋自分の要約・考察・編集を中心にする構成が安全です。</p>
+      <ul>
+        <li>出典URL・スレ名・日時を記事下部に明記する</li>
+        <li>レスの全文大量転載ではなく、必要部分だけ引用する</li>
+        <li>誹謗中傷・個人情報・差別表現は掲載しない</li>
+        <li>アフィリエイトリンクには広告・PR表記を入れる</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 深夜考察室 / Made for strange midnight thinking.</p>
+    <p>© 2026 哲学5chまとめ速報</p>
+    <p>※このページはサイト構成用テンプレートです。実在のスレッド転載時はルール確認が必要です。</p>
   </footer>
 
   <script src="script.js"></script>
